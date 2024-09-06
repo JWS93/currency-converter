@@ -101,13 +101,13 @@ var CurrencyConverter = function (_React$Component) {
               { className: "mr-1" },
               "USD"
             ),
-            React.createElement(CurrencyInput, { value: usd, onChange: this.handleUsdChange }),
+            React.createElement(CurrencyInput, { value: usd, handleChange: this.handleUsdChange }),
             React.createElement(
               "span",
               { className: "mx-3" },
               "="
             ),
-            React.createElement(CurrencyInput, { value: euro, onChange: this.handleEuroChange }),
+            React.createElement(CurrencyInput, { value: euro, handleChange: this.handleEuroChange }),
             React.createElement(
               "span",
               { className: "ml-1" },
@@ -139,7 +139,7 @@ var CurrencyInput = function (_React$Component2) {
           handleChange = _props.handleChange;
 
 
-      return React.createElement("input", { vlaue: value, onChange: handleChange, type: "number" });
+      return React.createElement("input", { value: value, onChange: handleChange, type: "number" });
     }
   }]);
 
