@@ -101,13 +101,13 @@ var CurrencyConverter = function (_React$Component) {
               { className: "mr-1" },
               "USD"
             ),
-            React.createElement("input", { value: usd, onChange: this.handleUsdChange, type: "number" }),
+            React.createElement(CurrencyInput, { value: usd, onChange: this.handleUsdChange }),
             React.createElement(
               "span",
               { className: "mx-3" },
               "="
             ),
-            React.createElement("input", { value: euro, onChange: this.handleEuroChange, type: "number" }),
+            React.createElement(CurrencyInput, { value: euro, onChange: this.handleEuroChange }),
             React.createElement(
               "span",
               { className: "ml-1" },
@@ -120,6 +120,30 @@ var CurrencyConverter = function (_React$Component) {
   }]);
 
   return CurrencyConverter;
+}(React.Component);
+
+var CurrencyInput = function (_React$Component2) {
+  _inherits(CurrencyInput, _React$Component2);
+
+  function CurrencyInput() {
+    _classCallCheck(this, CurrencyInput);
+
+    return _possibleConstructorReturn(this, (CurrencyInput.__proto__ || Object.getPrototypeOf(CurrencyInput)).apply(this, arguments));
+  }
+
+  _createClass(CurrencyInput, [{
+    key: "render",
+    value: function render() {
+      var _props = this.props,
+          value = _props.value,
+          handleChange = _props.handleChange;
+
+
+      return React.createElement("input", { vlaue: value, onChange: handleChange, type: "number" });
+    }
+  }]);
+
+  return CurrencyInput;
 }(React.Component);
 
 var container = document.getElementById('root');

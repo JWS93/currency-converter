@@ -1,11 +1,3 @@
-class CurrencyInput extends React.Component {
-  render() {
-    const { value, handleChange } = this.props;
-
-    return <input vlaue = {value} onChange = {handleChange} type = "number" />
-  }
-}
-
 class CurrencyConverter extends React.Component {
   constructor (props) {
     super(props);
